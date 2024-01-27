@@ -1,0 +1,65 @@
+html {
+  font-size: 14px;
+}
+
+.container-fluid {
+  padding: 0;
+  position: relative;
+}
+
+nav.navbar {
+  padding-left: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  background-color: grey;
+  border-bottom: 4px solid black;
+  margin: 0;
+  text-align: left;
+  position: relative;
+}
+
+.page-header {
+  margin: 15px 0;
+  position: relative;
+  transition: margin-top 0.3s ease; /* Add smooth transition effect */
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.pushed-down {
+  margin-top: 120px;
+}
+.para {
+  background-color: grey;
+  margin: 15px;
+}
+h3 {
+  text-decoration: underline;
+}
+
+.navbar-toggler,
+.navbar-collapse {
+  display: none;
+}
+
+/* Media queries */
+@media (max-width: 468px) {
+  .navbar-toggler,
+  .navbar-collapse {
+    display: block;
+  }
+  .navbar-collapse {
+    width: 100%;
+    position: absolute;
+    top: 70px; /* Height of the navbar */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  .nav-item {
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 0;
+  }
+}
